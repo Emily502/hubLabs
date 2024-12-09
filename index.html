@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .book {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Digital</h1>
+        <p>Bem-vindo à sua biblioteca online!</p>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Busque por título ou autor...">
+            <button>Buscar</button>
+        </div>
+        <h2>Catálogo de Livros</h2>
+        <div class="book-list">
+            <div class="book">
+                <h3>Livro 1</h3>
+                <p>Autor: Fulano de Tal</p>
+                <button>Ver Detalhes</button>
+            </div>
+            <div class="book">
+                <h3>Livro 2</h3>
+                <p>Autor: Beltrano</p>
+                <button>Ver Detalhes</button>
+            </div>
+            <div class="book">
+                <h3>Livro 3</h3>
+                <p>Autor: Sicrano</p>
+                <button>Ver Detalhes</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Biblioteca Digital. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
